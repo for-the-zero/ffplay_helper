@@ -148,7 +148,7 @@ while dpg.is_dearpygui_running():
 		running_ins += "-nodisp "
 
 	if dpg.get_value("s_window_title") == True:
-		running_ins += "-x " + dpg.get_value("s_title") + " "
+		running_ins += "-window_title " + dpg.get_value("s_title") + " "
 	if dpg.get_value("s_loop") == True:
 		#print(dpg.get_value(s_number))
 		running_ins += "-loop " + str(dpg.get_value(s_number)) + " "
